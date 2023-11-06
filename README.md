@@ -1,7 +1,7 @@
 # phosh-overlay-gestures
 Additional swipe gestures to use with Phosh using [lisgd](https://git.sr.ht/~mil/lisgd), and quick menu overlay using [eww](https://github.com/elkowar/eww) (also used as a little hack to partially block input on the right edge with blank transparent narrow widget, so the swipes would not be passed to the underlying application)
 
-Made for use with [Droidian port for Poco X3 Pro](https://github.com/droidian-vayu/device-page), though it should work anywhere with Phosh (or maybe even without, nothing Phosh-specific here, maybe only keybinding emulation)
+Made for use with [Droidian port for Poco X3 Pro](https://github.com/droidian-vayu/device-page), though I think it should work anywhere with Phosh (or maybe even without, nothing Phosh-specific here, maybe only keybinding emulation)
 
 ## Dependencies
 - [rofi-wayland](https://github.com/lbonn/rofi)
