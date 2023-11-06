@@ -10,7 +10,16 @@ Made for use with [Droidian port for Poco X3 Pro](https://github.com/droidian-va
 - [wtype](https://github.com/atx/wtype)
 - [roboto-mono-nerd](https://github.com/manjaro-sway/nerd-fonts-roboto-mono) (I'm not sure I used this exact variation of the font)
 
-## Gestures
+## Usage
+
+* LISGD_INPUT_DEVICE variable should be exported pointing your touchscreen device, can be found with `libinput debug-events`. For example:
+
+`export LISGD_INPUT_DEVICE="/dev/input/event4"`
+
+* `phosh-overlay-launch.sh` launches the whole thing
+  
+### Gestures
+
 <b>Right edge:</b>
 
 Right-to-Left short swipe - Emulate Escape
