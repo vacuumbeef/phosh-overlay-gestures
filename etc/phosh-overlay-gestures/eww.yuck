@@ -1,0 +1,78 @@
+(defvar winrev false)
+
+(defwindow quick-menu
+  :monitor 0 :stacking "fg" :wm-ignore true
+  :geometry (geometry :x "0px"
+                      :y "30px"
+                      :width "10px"
+                      :height "10px"
+		      :anchor "bottom left"
+		      )
+      (revealer :transition "slideright" :reveal winrev :duration "0.3s"
+  (menu-wrapper)
+	))
+
+  (defwidget menu-wrapper []
+(box :class "menu-wrapper" :orientation "v"
+       :space-evenly false
+       :spacing 15
+  (top-menu)
+  (bottom-menu)
+    ))
+
+
+  (defwidget top-menu []
+(box :class "menu" :orientation "v"
+       :space-evenly true
+       :spacing 15
+           (button :class "button" :onclick "wtype -M ctrl c -m ctrl & phosh-overlay-menu-toggle.sh" "")
+           (button :class "button" :onclick "wtype -M ctrl x -m ctrl & phosh-overlay-menu-toggle.sh" "")
+           (button :class "button" :onclick "wtype -M ctrl v -m ctrl & phosh-overlay-menu-toggle.sh" "")
+    ))
+
+  (defwidget bottom-menu []
+(box :class "menu" :orientation "v"
+       :space-evenly true
+       :spacing 15
+           (button :class "button" :onclick "keepassxc & phosh-overlay-menu-toggle.sh" "")
+    ))
+
+
+
+
+(defwindow right-gesture-block
+  :monitor 0
+  :wm-ignore "true"
+  :stacking "overlay"
+  :focusable "false"
+  :geometry (geometry :x "0px"
+                      :y "30px"
+                      :width "20px"
+                      :height "490px"
+		      :anchor "bottom right"
+		      )
+  (fake-widget))
+
+  (defwidget fake-widget []
+(box :class "gesture-block" :orientation "h"
+       :space-evenly true
+       :spacing 15
+           (label " ")
+    ))
+
+
+
+
+
+
+
+  (defwidget placeholder []
+(box :class "placeholder" :orientation "v"
+       :space-evenly true
+       :spacing 15
+           (eventbox :onclick "wtype -m ctrl p -m ctrl" "                               ")
+	   (label " ")
+           (button :class "button" :onclick "wtype -M alt -P F4 -m ctrl -p F4" "")
+           (button :class "button" :onclick "eww-rofi-button" "")
+           (button :class "button" :onclick "wtype -M alt -P F4 -m alt -p F4 & eww-quick-menu" "")
+    ))

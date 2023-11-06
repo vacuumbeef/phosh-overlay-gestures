@@ -1,0 +1,6 @@
+#!/bin/bash
+case $ROFI_RETV in
+    2 ) # Selected a custom entry
+            coproc ( firefox "https://duckduckgo.com/&q=${1}" > /dev/null  2>1 )
+    ;;
+esac

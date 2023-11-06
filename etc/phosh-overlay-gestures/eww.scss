@@ -1,0 +1,34 @@
+* {
+  all: unset; //Unsets everything so you can style everything from scratch
+}
+
+.gesture-block {
+  all: unset;
+  background-color: rgba(33, 40, 52, 0);
+}
+
+.menu {
+  all: unset;
+  background-color: black;
+  color: white;
+  padding: 5px;
+  font-size: 25px;
+  border: 5px solid black;
+  border-radius: 10px;
+}
+
+.menu-wrapper {
+  all: unset;
+  background-color: rgba(0, 0, 0, 0);
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.button {
+  all: unset;
+  padding-left: 6px;
+  padding-right: 6px;
+  background-color: #2d2d2d;
+  border: 1px solid #2d2d2d;
+  border-radius: 18px;
+}

@@ -1,0 +1,6 @@
+Package: phosh-overlay-gestures
+Version: 0.1
+Maintainer: vacuumbeef
+Depends: rofi-wayland, lisgd, eww, wtype, roboto-mono-nerd, libnotify-bin
+Architecture: all
+Description: Additional swipe gestures to use with phosh (using lisgd), and quick menu overlay (eww)
