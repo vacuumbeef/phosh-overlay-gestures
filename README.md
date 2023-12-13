@@ -22,22 +22,22 @@ Made for use with [Droidian port for Poco X3 Pro](https://github.com/droidian-va
 
 <b>Right edge:</b>
 
-Right-to-Left short swipe - Emulate Escape
+* Right-to-Left short swipe - Emulate Escape
 
-Right-to-Left long swipe - Emulate Alt+F4
+* Right-to-Left long swipe - Emulate Alt+F4
 
-Short vertical swipe up - Toggle Rofi with drun/window/web search modes
+* Short vertical swipe up - Toggle Rofi with drun/window/web search modes
 
-Short vertical swipe down - Toggle the notification drawer
+* Short vertical swipe down - Toggle the notification drawer
 
 <b>Bottom edge:</b>
 
-Horizontal swipes - Switch windows back and forth
+* Horizontal swipes - Switch windows back and forth
 
 <b>Bottom left corner:</b>
 
-Down-Left-to-Up-Right short swipe -  Toggle custom quick menu visibility
+* Down-Left-to-Up-Right short swipe -  Toggle custom quick menu visibility
 
 <b>Bottom right corner:</b>
 
-Down-Right-to-Up-Left swipe - Keyboard layout change
+* Down-Right-to-Up-Left swipe - Keyboard layout change
